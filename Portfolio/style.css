@@ -63,6 +63,8 @@ body{
     color: var(--main-color);
 }
 
+  
+
 #menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
@@ -639,6 +641,7 @@ span{
 }
 .contact-left{
     flex-basis: 35%;
+    padding-left: 2rem;
 }
 .contact-left p{
     font-size:20px;
@@ -648,6 +651,10 @@ span{
     color: #00abf0;;
     margin-right: 15px;
     font-size: 25px;
+}
+p a{
+    text-decoration: none;
+    color: #fff;
 }
 .social-icons{
     margin-top: 30px;
@@ -734,9 +741,12 @@ form btn2{
     color: var(--main-color);
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1550px){
     html {
         font-size: 55%;
+    }
+    .header{
+    background: var(--bg-color);
     }
 }
 
@@ -754,8 +764,27 @@ form btn2{
         padding: 2rem 4%;
     }
 }
+/*media-for-overlap-img*/
+@media (max-width: 811px){
+    .header{
+        padding: 2rem 4%;
+        background: var(--bg-color);
+    }
+    section{
+        padding: 10rem 4% 2rem;
+    }
+    .home{
+        padding: 0 4%;
+        background: none;
+        
+    }
+    .footer{
+        padding: 2rem 4%;
+    }
+}
 
-@media (max-width: 768px){
+
+@media (max-width: 811px){
     .header{
         background: var(--bg-color);
     }
@@ -763,7 +792,7 @@ form btn2{
     .home-imgHover{
         pointer-events: none;
         background: var(--bg-color);
-        opacity: .6;
+        opacity: .9;
     }
 }
 
@@ -785,6 +814,39 @@ form btn2{
         width: 38px;
         height: 38px;
     }
+}
+
+/*media-for-mobile-view*/
+/*it will break at 404px*/
+@media (max-width: 557px){
+    html{
+        font-size: 40%;
+    }
+
+    .home-content h1{
+        display: flex;
+        flex-direction: column;
+    }
+    .header.logo{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 600;  
+    }
+    .about-content{
+        padding-top: 20px;
+    }
+
+    .home-sci{
+        width: 160px;
+    }
+
+    .home-sci a{
+        width: 38px;
+        height: 38px;
+    }
+    .sub-title-contact{
+        font-size: 55px;
+}
 }
 
 @media (max-width: 462px){
@@ -847,3 +909,4 @@ form btn2{
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
